@@ -1,0 +1,18 @@
+#title{
+    font-size: 40px;
+    text-align: center;
+    padding:20px
+}
+#context{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#canvas{
+    width: 1000px;
+    height: 600px;
+    background-color: gray;
+    border:2px solid black;
+    border-radius: 16px;
+}
