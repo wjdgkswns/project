@@ -10,36 +10,15 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">game페이지</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href='#' onclick="selectMenu('home.html')">홈</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#" onclick="
-                               const iframe = document.getElementById('content');
-                               iframe.src = 'page/dino.html';
-                               iframe.onload = () => iframe.contentWindow.focus(); // iframe에 포커스 설정
-                           ">공룡게임</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href='#' onclick="selectMenu('rank.html')">랭킹</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="#" onclick="selectMenu1('register.html')">회원가입</a>
+        </li>
+        <li class="nav-item">
+            <a id="loginMenu" class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">로그인</a>
+        </li>
+    </ul>
 
-    <iframe id="content" src="page/home.html" style="width: 100%; height: 700px; border: none;"></iframe>
-
-    <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -55,8 +34,8 @@
                     </div>
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1">비밀번호</span>
-                        <input id="password" type="password" class="form-control" placeholder="Username"
-                            aria-label="Username" aria-describedby="basic-addon1">
+                        <input id="password" type="password" class="form-control" placeholder="Password"
+                            aria-label="Password" aria-describedby="basic-addon1">
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -70,10 +49,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-
-    <script src="index.js">
-
-    </script>
+        <script src="../index.js"></script>
 </body>
 
 </html>
